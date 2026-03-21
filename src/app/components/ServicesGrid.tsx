@@ -8,7 +8,8 @@ import {
   Hammer,
   Tractor,
   Trees,
-  ArrowRight
+  ArrowRight,
+  Truck,
 } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -45,13 +46,13 @@ export function ServicesGrid() {
         "Diagnosis and repair of sprinkler systems. Essential for thriving in Florida's climate.",
     },
     {
-      icon: <Hammer className="w-6 h-6 text-[#2D6A4F]" />,
+      icon: <Wind className="w-6 h-6 text-[#2D6A4F]" />,
       title: "Pressure Washing",
       description:
         "Revitalize hardscapes, driveways, and outdoor surfaces with our professional pressure washing services.",
     },
     {
-      icon: <Sprout className="w-6 h-6 text-[#2D6A4F]" />,
+      icon: <Truck className="w-6 h-6 text-[#2D6A4F]" />,
       title: "Hauling Services",
       description:
         "Efficient removal of yard waste, debris, and unwanted materials to keep your property clean and clutter-free.",
