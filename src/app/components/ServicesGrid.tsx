@@ -46,15 +46,15 @@ export function ServicesGrid() {
     },
     {
       icon: <Hammer className="w-6 h-6 text-[#2D6A4F]" />,
-      title: "Hardscaping",
+      title: "Pressure Washing",
       description:
-        "Custom pavers, elegant retaining walls, and durable stone features for outdoor living.",
+        "Revitalize hardscapes, driveways, and outdoor surfaces with our professional pressure washing services.",
     },
     {
       icon: <Sprout className="w-6 h-6 text-[#2D6A4F]" />,
-      title: "Turf Health",
+      title: "Hauling Services",
       description:
-        "Specialized chemical and organic treatments tailored specifically to your lawn type.",
+        "Efficient removal of yard waste, debris, and unwanted materials to keep your property clean and clutter-free.",
     },
     {
       icon: <Tractor className="w-6 h-6 text-[#2D6A4F]" />,
