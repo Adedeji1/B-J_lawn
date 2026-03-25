@@ -79,11 +79,6 @@ export function Hero() {
       className="relative pt-32 pb-20 md:pt-40 md:pb-32 lg:pt-48 lg:pb-40 overflow-hidden"
       style={{ background: C.bg }}
     >
-      {/*
-        Decorative shape — single, static, no blur filter (perf fix).
-        Two blurred absolute divs with mix-blend-multiply caused GPU composite
-        layers on every paint. Replaced with a lightweight SVG blob.
-      */}
       <svg
         className="absolute top-0 right-0 w-[520px] h-[520px] -translate-y-1/4 translate-x-1/4 pointer-events-none"
         viewBox="0 0 200 200"
@@ -136,7 +131,7 @@ export function Hero() {
               style={{ color: C.muted }}
             >
               Elevating outdoor spaces across Pinellas County — we blend
-              architectural design with expert horticulture for 500+ properties.
+              architectural design with expert horticulture for 50+ properties.
             </p>
 
             {/* CTAs */}
@@ -187,7 +182,7 @@ export function Hero() {
               {[
                 { icon: <Shield className="w-4 h-4 flex-shrink-0" aria-hidden="true" />, label: "Fully insured" },
                 { icon: <StarRow />, label: "5-star rated" },
-                { icon: null, label: "500+ properties served" },
+                { icon: null, label: "50+ properties served" },
               ].map(({ icon, label }) => (
                 <div key={label} className="flex items-center gap-1.5">
                   {icon && <span style={{ color: C.primary }}>{icon}</span>}
@@ -343,7 +338,7 @@ export function Hero() {
                     Pinellas County
                   </p>
                   <p className="text-lg font-bold leading-tight" style={{ color: C.primary }}>
-                    500+ Properties
+                    50+ Properties
                   </p>
                 </div>
               </div>
