@@ -1,5 +1,3 @@
-// 
-
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import logo from "../../assets/logo.png";

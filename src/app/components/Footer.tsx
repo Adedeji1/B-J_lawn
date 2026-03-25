@@ -1,4 +1,5 @@
 import { Facebook, Instagram, MapPin, Phone, Mail, Clock, Leaf } from "lucide-react";
+import logo from "../../assets/logo.jpeg";
 
 export function Footer() {
   return (
@@ -8,9 +9,11 @@ export function Footer() {
           {/* Left Column */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <a href="#" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#2D6A4F] transition-colors">
-                <Leaf className="w-5 h-5 text-white" />
-              </div>
+              <img
+                src={logo}
+                alt="Bay & Jay Lawncare"
+                className="h-11 w-auto object-contain"
+              />
               <span className="text-3xl font-bold text-white tracking-tight font-serif">
                 Bay & Jay
               </span>
