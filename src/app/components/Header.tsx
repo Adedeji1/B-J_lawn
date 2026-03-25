@@ -93,7 +93,7 @@ export function Header() {
             <a
               href="#"
               aria-label="Bay & Jay Lawncare — back to top"
-              className="flex-shrink-0 rounded-md transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+              className="flex-shrink-0 flex gap-6 rounded-md transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
               style={{ "--tw-ring-color": C.primary } as React.CSSProperties}
             >
               <img
@@ -101,6 +101,10 @@ export function Header() {
                 alt="Bay & Jay Lawncare"
                 className="h-11 w-auto object-contain"
               />
+              <span className="text-2xl font-bold text-[#1B4332] tracking-tight font-serif">
+                Bay & Jay
+              </span>
+
             </a>
 
             {/* ── Desktop nav ── */}
