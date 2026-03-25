@@ -59,17 +59,15 @@ export function LeadCaptureForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const shouldReduceMotion            = useReducedMotion();
 
-  // ── Focus management ───────────────────────────────────────────────────────
-  // After submission, move focus to the success heading so keyboard / SR users
-  // know the state changed. Same principle on reset.
+  // ── Focus management ───────
   const successHeadingRef = useRef<HTMLHeadingElement>(null);
   const firstInputRef     = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (isSubmitted) {
-      successHeadingRef.current?.focus();
+      successHeadingRef.current?.focus({ preventScroll: true });
     } else {
-      firstInputRef.current?.focus();
+      firstInputRef.current?.focus({ preventScroll: true });
     }
   }, [isSubmitted]);
 
@@ -289,14 +287,14 @@ export function LeadCaptureForm() {
                       <Field label="Email Address" htmlFor="email" required>
                         <input
                           ref={firstInputRef}
-                          type="text"
-                          id="fullName"
-                          name="fullName"
-                          value={formData.fullName}
+                          type="email"
+                          id="email"
+                          name="email"
+                          value={formData.email}
                           onChange={handleChange}
                           required
-                          autoComplete="name"
-                          placeholder="Jane Smith"
+                          autoComplete="email"
+                          placeholder="jane@smith.com"
                           className="field-input"
                         />
                       </Field>
