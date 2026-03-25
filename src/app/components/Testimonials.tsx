@@ -92,15 +92,17 @@ export function Testimonials() {
           slidesToScroll: 1,
           arrows: true,
           dots: true,
+          centerMode: false,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false, // Hide arrows on very small screens, rely on dots
+          arrows: false,
           dots: true,
+          centerMode: false,
         },
       },
     ],
@@ -129,11 +131,11 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="px-2 md:px-4 lg:px-0">
-          <Slider {...settings} className="testimonial-slider -mx-2 md:-mx-4">
+        <div className="px-0 md:px-4 lg:px-0">
+          <Slider {...settings} className="testimonial-slider -mx-0 md:-mx-4">
             {testimonials.map((t, idx) => (
-              <div key={idx} className="px-2 md:px-4 outline-none h-full">
-                <div className="bg-white p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-[2rem] shadow-xl shadow-[#1B4332]/5 border border-gray-100 h-full flex flex-col min-h-[280px] md:min-h-[320px] transition-transform duration-300 hover:-translate-y-1 md:hover:-translate-y-2 relative">
+              <div key={idx} className="px-0 md:px-4 outline-none h-full">
+                <div className="bg-white p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-[2rem] shadow-xl shadow-[#1B4332]/5 border border-gray-100 h-full flex flex-col min-h-[280px] md:min-h-[320px] transition-transform duration-300 hover:-translate-y-1 md:hover:-translate-y-2 relative mx-2 md:mx-0">
                   {/* Quote icon for mobile */}
                   <div className="absolute top-4 right-4 md:hidden">
                     <Quote className="w-5 h-5" style={{ color: C.primary, opacity: 0.3 }} />
