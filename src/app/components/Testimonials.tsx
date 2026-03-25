@@ -135,7 +135,7 @@ export function Testimonials() {
           <Slider {...settings} className="testimonial-slider -mx-0 md:-mx-4">
             {testimonials.map((t, idx) => (
               <div key={idx} className="px-0 md:px-4 outline-none h-full">
-                <div className="bg-white p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-[2rem] shadow-xl shadow-[#1B4332]/5 border border-gray-100 h-full flex flex-col min-h-[280px] md:min-h-[320px] transition-transform duration-300 hover:-translate-y-1 md:hover:-translate-y-2 relative mx-2 md:mx-0">
+                <div className="w-full bg-white p-6 md:p-8 lg:p-10 rounded-2xl md:rounded-[2rem] shadow-xl shadow-[#1B4332]/5 border border-gray-100 h-full flex flex-col min-h-[280px] md:min-h-[320px] transition-transform duration-300 hover:-translate-y-1 md:hover:-translate-y-2 relative">
                   {/* Quote icon for mobile */}
                   <div className="absolute top-4 right-4 md:hidden">
                     <Quote className="w-5 h-5" style={{ color: C.primary, opacity: 0.3 }} />
