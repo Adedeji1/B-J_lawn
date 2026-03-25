@@ -87,7 +87,7 @@ export function Hero() {
                 </div>
                 <div>
                   <p className="text-sm text-[#5C655E] font-medium">Trusted by</p>
-                  <p className="text-xl font-bold text-[#1B4332]">500+ Clients</p>
+                  <p className="text-xl font-bold text-[#1B4332]">Multiple Clients</p>
                 </div>
               </div>
             </motion.div>
